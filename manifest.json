@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Forms AI Answer (Networks)",
+  "version": "1.0.0",
+  "description": "Click a Google Forms question and press Ctrl 3 times to let AI (Gemini 2.5 Flash Lite via OpenRouter) tick the answer.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://openrouter.ai/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_title": "Forms AI Answer",
+    "default_popup": "popup.html"
+  }
+}

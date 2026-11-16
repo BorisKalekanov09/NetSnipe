@@ -1,0 +1,4 @@
+config.local.js
+.env
+*.key
+node_modules/
