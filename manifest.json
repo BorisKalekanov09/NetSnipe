@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Forms AI Answer (Networks)",
+  "name": "abc",
   "version": "1.0.0",
-  "description": "Click a Google Forms question and press Ctrl 3 times to let AI (Gemini 2.5 Flash Lite via OpenRouter) tick the answer.",
+  "description": "ttt",
   "permissions": ["storage"],
   "host_permissions": ["https://openrouter.ai/*"],
   "background": {
